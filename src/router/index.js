@@ -3,7 +3,6 @@ import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import BottomTabNavigator from '../component/BottomTabNavigator';
-
 import {Filters, Home, Likes, Profile, Region} from '../pages';
 
 const Stack = createStackNavigator();

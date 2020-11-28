@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import TabItem from '../TabItem';
 
 export default function BottomTabNavigator({state, descriptors, navigation}) {

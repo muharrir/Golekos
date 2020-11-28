@@ -1,5 +1,10 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {
+  KeyboardAvoidingView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+} from 'react-native';
 import {colors} from '../../utils';
 import {
   ICHome,
