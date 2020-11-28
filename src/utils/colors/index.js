@@ -4,10 +4,12 @@ export const mainColors = {
   blue3: '#2DC6F2',
   blue4: '#DFF8FF',
   blue5: '#F2F6FD',
+  blue6: '#2BC5F1',
 };
 
 export const colors = {
   navIcon: mainColors.blue3,
   navBackground: mainColors.blue4,
   pageBackground: mainColors.blue5,
+  banner: mainColors.blue6,
 };

@@ -10,6 +10,7 @@ import ICProfile from './icon-profile.svg';
 import ICProfileActive from './icon-profile-active.svg';
 import ICHamburger from './icon-hamburger';
 import ICSearch from './icon-search';
+import ICCheck from './icon-check.svg';
 
 export {
   ICHome,
@@ -24,4 +25,5 @@ export {
   ICProfileActive,
   ICHamburger,
   ICSearch,
+  ICCheck,
 };
