@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
-import {DummyProfile, ICHamburger} from '../../assets';
+import {DummyProfile, ICHamburger} from '../../../assets';
 
 export default function HeaderInfo() {
   return (

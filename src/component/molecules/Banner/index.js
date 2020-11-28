@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import {ICCheck} from '../../assets';
+import {ICCheck} from '../../../assets';
 
 export default function Banner() {
   return (

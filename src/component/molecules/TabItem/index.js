@@ -1,23 +1,18 @@
 import React from 'react';
+import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {colors} from '../../../utils';
 import {
-  KeyboardAvoidingView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-} from 'react-native';
-import {colors} from '../../utils';
-import {
+  ICFilter,
+  ICFilterActive,
   ICHome,
   ICHomeActive,
   ICLiked,
   ICLikedActive,
-  ICFilter,
-  ICFilterActive,
-  ICRegion,
-  ICRegionActive,
   ICProfile,
   ICProfileActive,
-} from '../../assets';
+  ICRegion,
+  ICRegionActive,
+} from '../../../assets';
 
 export default function TabItem({label, onLongPress, onPress, isFocused}) {
   const Icon = () => {

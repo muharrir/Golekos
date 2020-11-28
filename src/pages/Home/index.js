@@ -1,7 +1,7 @@
 import React from 'react';
-import {StatusBar, StyleSheet, TextInput, View} from 'react-native';
+import {StatusBar, StyleSheet, TextInput, View, Text} from 'react-native';
 import {ICSearch} from '../../assets';
-import {Banner, HeaderInfo, MostPeopleGo} from '../../component';
+import {Banner, HeaderInfo, MostPeopleGo} from '../../component/molecules';
 import {colors} from '../../utils';
 
 export default function Home() {
@@ -18,6 +18,7 @@ export default function Home() {
         <ICSearch style={{position: 'absolute', right: 16, top: 18}} />
       </View>
       <Banner />
+      <Text style={styles.label}>Most People Go</Text>
       <MostPeopleGo />
     </View>
   );
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.pageBackground,
     flex: 1,
     paddingHorizontal: 22,
-    paddingTop: 20,
+    paddingTop: 15,
   },
   input: {
     backgroundColor: 'white',
@@ -38,5 +39,11 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Light',
     borderRadius: 11,
     marginBottom: 30,
+  },
+  label: {
+    marginBottom: 16,
+    fontSize: 18,
+    fontFamily: 'Poppins-SemiBold',
+    color: '#040507',
   },
 });
