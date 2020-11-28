@@ -1,8 +1,8 @@
 import Home from './Home';
 import Details from './Details';
-import Liked from './Liked';
+import Likes from './Likes';
 import Filters from './Filters';
-import Search from './Search';
+import Region from './Region';
 import Profile from './Profile';
 
-export {Home, Details, Liked, Filters, Search, Profile};
+export {Home, Details, Likes, Filters, Region, Profile};

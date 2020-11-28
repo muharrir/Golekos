@@ -8,8 +8,8 @@ import {
   ICLikedActive,
   ICFilter,
   ICFilterActive,
-  ICSearch,
-  ICSearchActive,
+  ICRegion,
+  ICRegionActive,
   ICProfile,
   ICProfileActive,
 } from '../../assets';
@@ -19,14 +19,14 @@ export default function TabItem({label, onLongPress, onPress, isFocused}) {
     if (label === 'Home') {
       return isFocused ? <ICHomeActive /> : <ICHome />;
     }
-    if (label === 'Liked') {
+    if (label === 'Likes') {
       return isFocused ? <ICLikedActive /> : <ICLiked />;
     }
     if (label === 'Filters') {
       return isFocused ? <ICFilterActive /> : <ICFilter />;
     }
-    if (label === 'Search') {
-      return isFocused ? <ICSearchActive /> : <ICSearch />;
+    if (label === 'Region') {
+      return isFocused ? <ICRegionActive /> : <ICRegion />;
     }
     if (label === 'Profile') {
       return isFocused ? <ICProfileActive /> : <ICProfile />;
@@ -39,7 +39,7 @@ export default function TabItem({label, onLongPress, onPress, isFocused}) {
       onLongPress={onLongPress}
       style={isFocused ? styles.containerIsFocused : styles.container}>
       <Icon style={styles.icon} />
-      {isFocused && <Text style={styles.text}>{label}</Text>}
+      {isFocused && <Text style={styles.text}>{label.toUpperCase()}</Text>}
     </TouchableOpacity>
   );
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-export default function Search() {
+export default function Region() {
   return (
     <View>
-      <Text>Search Page</Text>
+      <Text>Region Page</Text>
     </View>
   );
 }
