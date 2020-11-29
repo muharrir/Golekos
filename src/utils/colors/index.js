@@ -8,6 +8,7 @@ export const mainColors = {
 };
 
 export const colors = {
+  checkout: mainColors.blue2,
   navIcon: mainColors.blue3,
   navBackground: mainColors.blue4,
   pageBackground: mainColors.blue5,

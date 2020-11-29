@@ -1,21 +1,23 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-export default function Border({name, type, amount, duration, photo}) {
+export default function Border({onPress, name, type, amount, duration, photo}) {
   return (
-    <View style={styles.content}>
-      <Image source={photo} style={styles.image} />
-      <View style={styles.wrapperText}>
-        <View>
-          <Text style={styles.name}>{name}</Text>
-          <Text style={styles.type}>{type}</Text>
-        </View>
-        <View>
-          <Text style={styles.amount}>{amount}</Text>
-          <Text style={styles.duration}>{duration}</Text>
+    <TouchableOpacity onPress={onPress}>
+      <View style={styles.content}>
+        <Image source={photo} style={styles.image} />
+        <View style={styles.wrapperText}>
+          <View>
+            <Text style={styles.name}>{name}</Text>
+            <Text style={styles.type}>{type}</Text>
+          </View>
+          <View>
+            <Text style={styles.amount}>{amount}</Text>
+            <Text style={styles.duration}>{duration}</Text>
+          </View>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
 

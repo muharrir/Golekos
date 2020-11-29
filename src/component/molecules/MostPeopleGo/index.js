@@ -3,7 +3,7 @@ import {StyleSheet, View} from 'react-native';
 import {DummyMost1, DummyMost2, DummyMost3, DummyMost4} from '../../../assets';
 import {Border} from '../../atoms';
 
-export default function MostPeopleGo() {
+export default function MostPeopleGo({onPress}) {
   return (
     <View style={styles.page}>
       <Border
@@ -14,6 +14,7 @@ export default function MostPeopleGo() {
         duration="/month"
       />
       <Border
+        onPress={onPress}
         photo={DummyMost2}
         name="Blue Fast"
         type="Umum"

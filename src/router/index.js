@@ -3,7 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import {BottomTabNavigator} from '../component';
-import {Filters, Home, Likes, Profile, Region} from '../pages';
+import {Filters, Home, Likes, Profile, Region, Details} from '../pages';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -26,6 +26,11 @@ export default function Router() {
       <Stack.Screen
         name="MainApp"
         component={MainApp}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Details"
+        component={Details}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
